@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+   <h4> question 1</h4>
+   <p> Output of given code is 22 </Output></p>
+
+   <h4>question 2</h4>
+<pre>== and === are both comparison operators in javascript but == operator perfroms type coercion beforwe compariong
+     If data type of both values is different javascript tries to convertbthem into same type and the compare them 
+     Whereas === operator compares both data type and values of operand 
+     Example: </pre>
+      <script>
+        let a=10;
+        let b='10';
+        console.log(a==b);
+         console.log(a===b);
+      </script>
+
+      <h4>question 3</h4>
+<pre>   The output of      
+        let x= 5;
+         x*=3+2;
+         console.log(x);    is <b>25</b></pre>
+
+         <h4> question 5</h4>
+         <pre> The output of    
+            console.log(true && false || true); is true
+         </pre>
+<h4> question 6</h4>
+<script>
+   let num=parseInt(prompt("Enter a number"));
+   if(num%2==0)
+   {
+      console.log("Number is even");
+   }
+   else
+   {
+      console.log("Numer is odd");
+   }
+</script>
+<h4> question 7</h4>
+<script>
+   let age=parseInt(prompt("Enter your age"));
+
+   if(age>=60)
+   {
+      console.log("Senior");
+   }
+   else if(age >=18 && age <=59)
+   {
+      console.log("Adult");
+   }
+   else
+   {
+      console.log("Minor");
+   }
+</script>
+<h4> question 8</h4>
+   <pre> The output of following code will is
+      
+       let x=5 ,y=5;
+      if(x=y)
+   {
+      console.log("Equal");
+   }
+      else
+   {
+      console.log(" not equal");
+   
+   } 
+     will be equal </pre>
+
+     <h4> question 9</h4>
+     <script>
+      for( let m = 1;m<=10; m++)
+      {
+         console.log(" 7 * ",m,"=",7*m );
+      }
+     </script>
+
+     <h4> question 10 </h4>
+     <script>
+     let  z=2
+      while(z<=20)
+      {
+         if(z % 2 == 0)
+         {
+            console.log(z);
+         }
+         z++;
+      }
+     </script>
+
+     <H4> question 11</H4>
+     <script>
+      let n= 10;
+      do
+      {
+         console.log(n)
+         n--;
+      }while(n>=1);
+     
+     </script>
+
+     <h5> question 12</h5>
+     {
+      <pre>
+         for loop in javascript is used when number of iterations is known or fixed 
+         example for printing  numbers between 1 to 10 
+
+         while loop is used when loop should continue as long as a condition is true but you dont necessarialy
+         know how many times it will run 
+
+         do while loop is used when you want code to run at least oncew even if conditon is false </pre>
+
+         <script>
+            console.log(" for loop example")
+      for( let c= 1;c<=10; c++)
+      {
+         console.log(" 7 * ",c,"=",7*c );
+      }
+     </script>
+
+     <script>
+     
+     let  d=2
+      while(d<=20)
+      {
+         if(d % 2 == 0)
+         {
+            console.log(d);
+         }
+         d++;
+      }
+     </script>
+
+    
+     <script>
+     
+      let e= 10;
+      do
+      {
+         console.log(e)
+         e--;
+      }while(e>=1);
+     
+     </script>
+
+      
+     }
+
+     <h4> question 13</h4>
+     <script>
+    let sum=0;
+    for(let num=0;num<=100;num++)
+    {
+      sum=sum+num;
+    }
+    console.log("Sum of numbers from 1 to 100 is",sum);
+     </script>
+
+     <h4> question 14</h4>
+     <script>
+      let day = parseInt(prompt("Enter number of week day"));
+      switch(day)
+      {
+         case 1:  console.log("Monday");
+         break;
+
+         case 2:  console.log("Tuesday");
+         break;
+
+         case 3:  console.log("Wednesday");
+         break;
+
+         case 4:  console.log("Thursday");
+         break;
+
+         case 5:  console.log("Friday");
+         break;
+
+         case 6:  console.log("Saturday");
+         break;
+
+         case 7:  console.log("Sunday");
+         break;
+
+          default:  console.log("Enter valid input");
+         break;
+
+      }
+     </script>
+
+     <h4> question 15</h4>
+   <pre>
+      The output of given code will be 
+      invalid because there are only two cases given 1 and 2 .There is no case for number nine hence 
+      compilwe give invalid ouptut as it executes default case.Default case is executed when there 
+      is no valid case available for given input   .
+
+   </pre>
+
+   <h4> Question 16</h4>
+   <script>
+   let students = ["Shrishti", "ZUber", "Prajwal", "Urmi", "Isha"];
+   console.log(students[2]); 
+   </script>
+
+   <h4> question 17</h4>
+   <script>
+      let fruits = ["Apple", "Banana", "Cherry", "Mango", "Grapes"];
+
+        console.log("Length of array:", fruits.length); 
+
+         for(let i = 0; i < fruits.length; i++) 
+         {
+           console.log(fruits[i]);
+         }
+   </script>
+
+   <h4> question 18</h4>
+   <pre>
+      An array literal is the simplest and most commonly used way to create an array in JavaScript.
+       It uses square brackets [] to enclose a list of elements, separated by commas.
+       Indexing starts at 0.
+       Can contain elements of any data type (numbers, strings, booleans, even other arrays or objects).
+       Preferred over the constructor (new Array()) for its simplicity and readability.
+
+       Example:
+
+       let mixedArray = ["Shrishti", 22, true, null];
+       console.log(mixedArray); // Output: ["Shrishti", 22, true, null]
+
+
+   </pre>
+
+   <pre>
+       An array constructor is another way to create an array in JavaScript using the built-in Array() function.
+       let arrayName = new Array();              // Creates an empty array
+       let arrayName = new Array(element1, element2, ...);  // Creates array with elements
+   </pre>
+
+   <script>
+      console.log("Array literal");
+       let mixedArray = ["Shrishti", 22, true, null];
+       console.log(mixedArray); 
+
+           console.log("Array constructor");
+               let numb = new Array(10, 20, 30); 
+              console.log(numb);  
+
+   </script>
+
+   <h4> question 19</h4>
+   check in javascript
+   <script> 
+      console.log(" Program to print only numbers greater than 50 from an array");
+
+      let numbers = [45, 67, 89, 23, 100, 35];
+
+     for(let i = 0; i < numbers.length; i++) {
+    if(numbers[i] > 50) {
+        console.log(numbers[i]);
+    }
+}
+
+   </script>
+
+   <h4> question 20</h4>
+  <pre>
+   Index 5 is assigned a value ("Scale"), which means items[3] and items[4] will be undefined.
+    JavaScript arrays are dynamic, so the length becomes 6 (from index 0 to 5)
+    Hence output of given code will be 6
+
+    </pre>
+     
+</body>
+</html>
